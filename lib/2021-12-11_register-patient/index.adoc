@@ -195,8 +195,10 @@ include::./tpl/event.adoc[]
 
 === Patient search
 
+// -- STATE --------------------------------------------------------------------      
 :title: Showing register patient page
 include::./tpl/state.adoc[]
+// -----------------------------------------------------------------------------
 
 :actor: NURSE
 :text: How can I help you?
@@ -215,17 +217,18 @@ include::./tpl/speech.adoc[]
 include::./tpl/speech.adoc[]  
 
 :actor: PATIENT
-:text: Ajeet Singh
+:text: Amardeep Singh
 include::./tpl/speech.adoc[]
 
-
+// -- EVENT --------------------------------------------------------------------
 :title: Patient name entered
 include::./tpl/event.adoc[]
+// -----------------------------------------------------------------------------
 
-
+// -- STATE --------------------------------------------------------------------      
 :title: Showing patient search results
-include::./tpl/state.adoc[]  
-
+include::./tpl/state.adoc[]
+// -----------------------------------------------------------------------------
 
 :actor: NURSE
 :text: Where are you from?
@@ -235,4 +238,12 @@ include::./tpl/speech.adoc[]
 :text: Rahon
 include::./tpl/speech.adoc[]
 
+// -- EVENT --------------------------------------------------------------------
+:title: Patient search result selected
+include::./tpl/event.adoc[]
+// -----------------------------------------------------------------------------
 
+// -- STATE --------------------------------------------------------------------      
+:title: Showing patient details page
+include::./tpl/state.adoc[]
+// -----------------------------------------------------------------------------
