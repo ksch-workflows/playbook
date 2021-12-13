@@ -201,10 +201,6 @@ include::./tpl/state.adoc[]
 // -----------------------------------------------------------------------------
 
 :actor: NURSE
-:text: How can I help you?
-include::./tpl/speech.adoc[]
-
-:actor: NURSE
 :text: Have you ever been in the hospital?
 include::./tpl/speech.adoc[]
 
