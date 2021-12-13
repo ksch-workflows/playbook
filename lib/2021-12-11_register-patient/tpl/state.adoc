@@ -1,0 +1,4 @@
+[.text-center]
+_{title}._
+
+:!title:

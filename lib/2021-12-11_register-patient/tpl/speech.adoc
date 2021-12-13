@@ -1,0 +1,12 @@
+[cols="3,97"]
+[grid=none]
+|===
+
+2+|{actor}
+
+|
+| {text}
+|===
+
+:!actor:
+:!text:

@@ -1,0 +1,238 @@
+= Patient registration
+:toc:
+:docinfo: shared-footer
+
+
+++++
+<style>
+table {
+  border: none !IMPORTANT;
+  border-collapse: collapse !IMPORTANT;
+  margin-bottom:0 !IMPORTANT;
+}
+
+th, td {
+    padding: 0 !IMPORTANT;
+}
+
+td.placeholder {
+  width: 20px;
+}
+</style>
+++++
+
+== Characters in the Play
+
+- NURSE, working at the registration desk.
+- PATIENT, farmer from Rahon.
+- DOCTOR, working in the emergency room.
+
+== Registration of new patient
+
+=== Reception
+
+// -- STATE --------------------------------------------------------------------
+:title: Showing registration dashboard
+include::./tpl/state.adoc[]
+// -----------------------------------------------------------------------------
+
+:actor: NURSE
+:text: How can I help you?
+include::./tpl/speech.adoc[]
+
+:actor: PATIENT
+:text: I want to see a doctor.
+include::./tpl/speech.adoc[]
+
+// -- EVENT --------------------------------------------------------------------
+:title: Register patient requested
+include::./tpl/event.adoc[]
+// -----------------------------------------------------------------------------
+
+// -- STATE --------------------------------------------------------------------      
+:title: Showing register patient page
+include::./tpl/state.adoc[]
+// -----------------------------------------------------------------------------
+
+:actor: NURSE
+:text: Have you ever been in the hospital?
+include::./tpl/speech.adoc[]
+
+:actor: PATIENT
+:text: No, I have not.
+include::./tpl/speech.adoc[]
+
+// -- EVENT --------------------------------------------------------------------
+:title: Register new patient requested
+include::./tpl/event.adoc[]
+// -----------------------------------------------------------------------------
+
+=== Questionaire
+
+// -- STATE --------------------------------------------------------------------
+:title: Opening patient registration wizard
+include::./tpl/state.adoc[]
+// -----------------------------------------------------------------------------
+
+:actor: NURSE
+:text: What is your name?
+include::./tpl/speech.adoc[]
+
+:actor: PATIENT
+:text: Amardeep Singh
+include::./tpl/speech.adoc[]
+
+:actor: NURSE
+:text: What is your father's name?
+include::./tpl/speech.adoc[]
+
+:actor: PATIENT
+:text: Amanpreet Singh
+include::./tpl/speech.adoc[]
+
+:actor: NURSE
+:text: Where are you from?
+include::./tpl/speech.adoc[]
+
+:actor: PATIENT
+:text: Rahon
+include::./tpl/speech.adoc[]
+
+:actor: NURSE
+:text: What is your chief complaint?
+include::./tpl/speech.adoc[]
+
+:actor: PATIENT
+:text: This morning I woke up with fever.
+include::./tpl/speech.adoc[]
+
+// -- EVENT --------------------------------------------------------------------
+:title: New patient saved
+include::./tpl/event.adoc[]
+// -----------------------------------------------------------------------------
+
+// -- STATE --------------------------------------------------------------------      
+:title: Showing patient details page
+include::./tpl/state.adoc[]
+// -----------------------------------------------------------------------------
+
+// -- EVENT --------------------------------------------------------------------
+:title: Print registration card requested
+include::./tpl/event.adoc[]
+// -----------------------------------------------------------------------------
+
+
+== Registration of new patient in emergency
+
+// -- STATE --------------------------------------------------------------------      
+:title: Showing registration dashboard
+include::./tpl/state.adoc[]
+// -----------------------------------------------------------------------------
+
+:actor: DOCTOR
+:text: We have a new patient in the emergency room and don't know anything about him, yet. Print a registration card, please!
+include::./tpl/speech.adoc[]
+
+:actor: NURSE
+:text: Okay!
+include::./tpl/speech.adoc[]
+
+// -- EVENT --------------------------------------------------------------------
+:title: Register patient requested
+include::./tpl/event.adoc[]
+// -----------------------------------------------------------------------------
+
+// -- STATE --------------------------------------------------------------------      
+:title: Showing register patient page
+include::./tpl/state.adoc[]
+// -----------------------------------------------------------------------------
+
+// -- EVENT --------------------------------------------------------------------
+:title: Add new patient requested
+include::./tpl/event.adoc[]
+// -----------------------------------------------------------------------------
+
+// -- STATE --------------------------------------------------------------------      
+:title: Showing register patient dialog
+include::./tpl/state.adoc[]
+// -----------------------------------------------------------------------------
+
+// -- EVENT --------------------------------------------------------------------
+:title: New patient saved
+include::./tpl/event.adoc[]
+// -----------------------------------------------------------------------------
+
+// -- STATE --------------------------------------------------------------------      
+:title: Showing patient details
+include::./tpl/state.adoc[]
+// -----------------------------------------------------------------------------
+
+// -- EVENT --------------------------------------------------------------------
+:title: Print registration card requested
+include::./tpl/event.adoc[]
+// -----------------------------------------------------------------------------
+
+
+== Registration of existing patient
+
+=== Reception
+
+:title: Showing registration dashboard
+include::./tpl/state.adoc[]
+
+:actor: NURSE
+:text: How can I help you?
+include::./tpl/speech.adoc[]
+
+:actor: PATIENT
+:text: I want to see a doctor.
+include::./tpl/speech.adoc[]
+
+
+:title: Patient registration required
+include::./tpl/event.adoc[]
+
+
+=== Patient search
+
+:title: Showing register patient page
+include::./tpl/state.adoc[]
+
+:actor: NURSE
+:text: How can I help you?
+include::./tpl/speech.adoc[]
+
+:actor: NURSE
+:text: Have you ever been in the hospital?
+include::./tpl/speech.adoc[]
+
+:actor: PATIENT
+:text: Yes, I have been here two month before.
+include::./tpl/speech.adoc[]
+
+:actor: NURSE
+:text: What is your name?
+include::./tpl/speech.adoc[]  
+
+:actor: PATIENT
+:text: Ajeet Singh
+include::./tpl/speech.adoc[]
+
+
+:title: Patient name entered
+include::./tpl/event.adoc[]
+
+
+:title: Showing patient search results
+include::./tpl/state.adoc[]  
+
+
+:actor: NURSE
+:text: Where are you from?
+include::./tpl/speech.adoc[]
+
+:actor: PATIENT
+:text: Rahon
+include::./tpl/speech.adoc[]
+
+

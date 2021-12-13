@@ -1,4 +1,4 @@
-baseURL = "https://ksch-workflows.github.io/storybook"
+baseURL = "https://ksch-workflows.github.io/playbook"
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true

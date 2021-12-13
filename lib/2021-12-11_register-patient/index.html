@@ -1,10 +1,3 @@
----
-title: Register patient
-date: 2021-12-11T02:01:58+05:30
-lastmod: 2021-12-11T02:01:58+05:30
-
----
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -446,6 +439,25 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <body class="article">
 <div id="header">
 <h1>Patient registration</h1>
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_characters_in_the_play">Characters in the Play</a></li>
+<li><a href="#_registration_of_new_patient">Registration of new patient</a>
+<ul class="sectlevel2">
+<li><a href="#_reception">Reception</a></li>
+<li><a href="#_questionaire">Questionaire</a></li>
+</ul>
+</li>
+<li><a href="#_registration_of_new_patient_in_emergency">Registration of new patient in emergency</a></li>
+<li><a href="#_registration_of_existing_patient">Registration of existing patient</a>
+<ul class="sectlevel2">
+<li><a href="#_reception_2">Reception</a></li>
+<li><a href="#_patient_search">Patient search</a></li>
+</ul>
+</li>
+</ul>
+</div>
 </div>
 <div id="content">
 <div id="preamble">
@@ -478,7 +490,284 @@ td.placeholder {
 <li>
 <p>PATIENT, coming into the hospital</p>
 </li>
+<li>
+<p>DOCTOR</p>
+</li>
 </ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_registration_of_new_patient">Registration of new patient</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_reception">Reception</h3>
+<div class="paragraph text-center">
+<p><em>Showing registration dashboard.</em></p>
+</div>
+<table class="tableblock frame-all grid-none stretch">
+<colgroup>
+<col style="width: 3%;">
+<col style="width: 97%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">NURSE</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">How can I help you?</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-none stretch">
+<colgroup>
+<col style="width: 3%;">
+<col style="width: 97%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">PATIENT</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">I want to see a doctor.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph text-right">
+<p><em>Register patient requested.</em></p>
+</div>
+<div class="paragraph text-center">
+<p><em>Showing register patient page.</em></p>
+</div>
+<table class="tableblock frame-all grid-none stretch">
+<colgroup>
+<col style="width: 3%;">
+<col style="width: 97%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">NURSE</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Have you ever been in the hospital?</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-none stretch">
+<colgroup>
+<col style="width: 3%;">
+<col style="width: 97%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">PATIENT</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No, I have not.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph text-right">
+<p><em>Register new patient requested.</em></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_questionaire">Questionaire</h3>
+<div class="paragraph text-center">
+<p><em>Opening patient registration wizard.</em></p>
+</div>
+<table class="tableblock frame-all grid-none stretch">
+<colgroup>
+<col style="width: 3%;">
+<col style="width: 97%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">NURSE</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">What is your name?</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-none stretch">
+<colgroup>
+<col style="width: 3%;">
+<col style="width: 97%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">PATIENT</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Amardeep Singh</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-none stretch">
+<colgroup>
+<col style="width: 3%;">
+<col style="width: 97%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">NURSE</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">What is your father&#8217;s name?</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-none stretch">
+<colgroup>
+<col style="width: 3%;">
+<col style="width: 97%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">PATIENT</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Amanpreet Singh</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-none stretch">
+<colgroup>
+<col style="width: 3%;">
+<col style="width: 97%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">NURSE</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Where are you from?</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-none stretch">
+<colgroup>
+<col style="width: 3%;">
+<col style="width: 97%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">PATIENT</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rahon</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-none stretch">
+<colgroup>
+<col style="width: 3%;">
+<col style="width: 97%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">NURSE</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">What is your chief complaint?</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-none stretch">
+<colgroup>
+<col style="width: 3%;">
+<col style="width: 97%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">PATIENT</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This morning I woke up with fever.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph text-right">
+<p><em>New patient saved.</em></p>
+</div>
+<div class="paragraph text-center">
+<p><em>Showing patient details page.</em></p>
+</div>
+<div class="paragraph text-right">
+<p><em>Print registration card requested.</em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_registration_of_new_patient_in_emergency">Registration of new patient in emergency</h2>
+<div class="sectionbody">
+<div class="paragraph text-center">
+<p><em>Showing registration dashboard.</em></p>
+</div>
+<table class="tableblock frame-all grid-none stretch">
+<colgroup>
+<col style="width: 3%;">
+<col style="width: 97%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">DOCTOR</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">We have a new patient in the emergency room and don&#8217;t know anything about him, yet. Print a registration card, please!</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-none stretch">
+<colgroup>
+<col style="width: 3%;">
+<col style="width: 97%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">NURSE</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Okay!</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph text-right">
+<p><em>Register patient requested.</em></p>
+</div>
+<div class="paragraph text-center">
+<p><em>Showing register patient page.</em></p>
+</div>
+<div class="paragraph text-right">
+<p><em>Add new patient requested.</em></p>
+</div>
+<div class="paragraph text-center">
+<p><em>Showing register patient dialog.</em></p>
+</div>
+<div class="paragraph text-right">
+<p><em>New patient saved.</em></p>
+</div>
+<div class="paragraph text-center">
+<p><em>Showing patient details.</em></p>
+</div>
+<div class="paragraph text-right">
+<p><em>Print registration card requested.</em></p>
 </div>
 </div>
 </div>
@@ -486,7 +775,7 @@ td.placeholder {
 <h2 id="_registration_of_existing_patient">Registration of existing patient</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_reception">Reception</h3>
+<h3 id="_reception_2">Reception</h3>
 <div class="paragraph text-center">
 <p><em>Showing registration dashboard.</em></p>
 </div>
@@ -643,128 +932,12 @@ td.placeholder {
 </div>
 </div>
 </div>
-<div class="sect1">
-<h2 id="_act_1_registration_of_new_patient">[Act 1] Registration of new patient</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_scene_1_reception">[Scene 1] Reception</h3>
-<div class="paragraph text-center">
-<p><em>Showing register patient page.</em></p>
-</div>
-<table class="tableblock frame-all grid-none stretch">
-<colgroup>
-<col style="width: 3%;">
-<col style="width: 97%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">NURSE</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">How can I help you?</p></td>
-</tr>
-</tbody>
-</table>
-<table class="tableblock frame-all grid-none stretch">
-<colgroup>
-<col style="width: 3%;">
-<col style="width: 97%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">NURSE</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Have you ever been in the hospital?</p></td>
-</tr>
-</tbody>
-</table>
-<table class="tableblock frame-all grid-none stretch">
-<colgroup>
-<col style="width: 3%;">
-<col style="width: 97%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">PATIENT</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">No, I have not.</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph text-right">
-<p><em>Register new patient requested.</em></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_scene_2_questionaire">[Scene 2] Questionaire</h3>
-<div class="paragraph text-center">
-<p><em>Opening patient registration wizard.</em></p>
-</div>
-<table class="tableblock frame-all grid-none stretch">
-<colgroup>
-<col style="width: 3%;">
-<col style="width: 97%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">NURSE</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">What is your name?</p></td>
-</tr>
-</tbody>
-</table>
-<table class="tableblock frame-all grid-none stretch">
-<colgroup>
-<col style="width: 3%;">
-<col style="width: 97%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">NURSE</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Where are you from?</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph text-right">
-<p><em>New patient saved.</em></p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_act_1_2_registration_of_new_patient_canceled">[Act 1.2] Registration of new patient canceled</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="_act_1_2_registration_of_new_patient_paused">[Act 1.2] Registration of new patient paused</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="_act_2_registration_of_new_patient_in_emergency">[Act 2] Registration of new patient in emergency</h2>
-<div class="sectionbody">
-
-</div>
-</div>
 </div>
 <div id="footer">
 <div id="footer-text">
+Last updated 2021-12-11 18:42:25 +0100
+</div>
+</div>
 <a href="https://ksch-workflows.github.io/playbook/imprint" style="padding: 8px;">Imprint</a>
-</div>
-</div>
-
 </body>
 </html>
